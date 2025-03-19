@@ -1,0 +1,447 @@
+{
+    "schemaVersion": "0.0.1",
+    "standardsMappings": [
+        {
+            "instrument": {
+                "url": "<fake_url.com>",
+                "id": "0000",
+                "title": [
+                    "",
+                    "Data CTN0095A2"
+                ]
+            }
+        }
+    ],
+    "fields": [
+      {
+        "name": "PCC_ID",
+        "title": "Primary Care Clinicians IDs",
+        "description": "IDs for the primary care clinicians ",
+        "type": "string",
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "STIGMA_GROUP",
+          "title": "Primary Care Clinicians' Stigma Reduction Indicator",
+          "description": "Whether a subject was part of the Stigma Reducton Group (STIG_INT) or the Attention Control group (STIG_CTRL)",
+          "type": "string",
+          "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "COMPLETE_TRAINING",
+          "title": "Primary Care Clinicians Completed Training",
+          "description": "Did the Primary Care Clinician complete one of the two trainings",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "0",
+                  "1"
+              ]
+          },
+          "enumLabels": {
+              "0": "False",
+              "1": "True"
+          },
+          "standardsMappings": [
+              {
+                  "item": {
+                      "source": "",
+                      "id": ""
+                  }
+              }
+          ]
+      },
+      {
+          "name": "COMPLETE_SURVEY",
+          "title": "Primary Care Clinicians Completed Survey",
+          "description": "Did the Primary Care Clinician complete the follow up survey",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "0",
+                  "1"
+              ]
+          },
+          "enumLabels": {
+              "0": "False",
+              "1": "True"
+          },
+          "standardsMappings": [
+              {
+                  "item": {
+                      "source": "",
+                      "id": ""
+                  }
+              }
+          ]
+      },
+      {
+          "name": "PCC_MD",
+          "title": "Primary Care Clinicians' Medical Degree",
+          "description": "The type of medical degree of the Primary Care Clinicians",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "0",
+                  "1"
+              ]
+          },
+          "enumLabels": {
+              "0": "PA/NP",
+              "1": "MD/DO"
+          },
+          "standardsMappings": [
+              {
+                  "item": {
+                      "source": "",
+                      "id": ""
+                  }
+              }
+          ]
+      },
+      {
+          "name": "PCC_WAIVERED",
+          "title": "Primary Care Clinicians' Waivered Status",
+          "description": "Indicator if a PCC is waivered to prescrib buprenorphine",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "0",
+                  "1"
+              ]
+          },
+          "enumLabels": {
+              "0": "False",
+              "1": "True"
+          },
+          "standardsMappings": [
+              {
+                  "item": {
+                      "source": "",
+                      "id": ""
+                  }
+              }
+          ]
+      },
+      {
+          "name": "PCC_GENDER",
+          "title": "Primary Care Clinicians' Gender",
+          "description": "Gender of the Primary Care Clinicians",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "1",
+                  "2",
+                  "6",
+                  "7"
+              ]
+          },
+          "enumLabels": {
+              "1": "Male",
+              "2": "Female",
+              "6": "Not Listed",
+              "7": "Prefer not to answer"
+          },
+          "standardsMappings": [
+              {
+                  "item": {
+                      "source": "",
+                      "id": ""
+                  }
+              }
+          ]
+      },
+      {
+          "name": "AGE",
+          "title": "Primary Care Clinicians' Age",
+          "description": "Primary Care Clinicians' Age",
+          "type": "integer",
+         "constraints": {
+                "maximum": 100,
+                "minimum": 0
+            },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "PCC_RACE",
+          "title": "Primary Care Clinicians' Race",
+          "description": "Race of the Primary Care Clinicians",
+          "type": "string",
+          "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "PCC_HISPANIC",
+          "title": "Primary Care Clinicians' Ethnicity",
+          "description": "Ethnicity of the Primary Care Clinicians",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "0",
+                  "1"
+              ]
+          },
+          "enumLabels": {
+              "0": "Not Hispanic or Latino",
+              "1": "Hispanic or Latino"
+          },
+          "standardsMappings": [
+              {
+                  "item": {
+                      "source": "",
+                      "id": ""
+                  }
+              }
+          ]
+      },
+      {
+          "name": "DDBS",
+          "title": "OUD Overall Stigma",
+          "description": "Primary Care Clinicians' OUD Overall Stigma",
+          "type": "number",
+          "constraints": {
+                "maximum": 7.0,
+                "minimum": 1.0
+            },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "DDBS_DIFF",
+          "title": "OUD Overall Stigma - Difference",
+          "description": "Primary Care Clinicians' OUD Overall Stigma - Difference",
+          "type": "number",
+         "constraints": {
+                "maximum": 7.0,
+                "minimum": 1.0
+            },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "DDBS_DISDAIN",
+          "title": "OUD Overall Stigma - Disdain",
+          "description": "Primary Care Clinicians' OUD Overall Stigma - Disdain",
+          "type": "number",
+         "constraints": {
+                "maximum": 8.0,
+                "minimum": 1.0
+            },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "DDBS_BLAME2",
+          "title": "OUD Overall Stigma - Blame",
+          "description": "Primary Care Clinicians' OUD Overall Stigma - Blame",
+          "type": "number",
+         "constraints": {
+                "maximum": 8.0,
+                "minimum": 1.0
+            },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "DDBS_BLAME",
+          "title": "OUD Overall Stigma - Blame",
+          "description": "Primary Care Clinicians' OUD Overall Stigma - Blame",
+          "type": "number",
+         "constraints": {
+                "maximum": 8.0,
+                "minimum": 1.0
+            },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "WILL_WORK",
+          "title": "Primary Care Clinicians' Willingness to work with OUD",
+          "description": "Primary Care Clinicians' Willingness to work with OUD",
+          "type": "integer",
+         "constraints": {
+                "enum": [
+                    "1 to 5"
+                ],
+                "maximum": 5,
+                "minimum": 1
+            },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "INTEND_WAIVER",
+          "title": "Primary Care Clinicians' intention to get waivered",
+          "description": "Primary Care Clinicians' intention to get waivered to prescribe buprenorphine",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+              ],
+              "maximum": 4,
+              "minimum": 1
+          },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "INTEND_PRESCRIBE",
+          "title": "Primary Care Clinicians' intention to prescribe",
+          "description": "Primary Care Clinicians' intention to prescribe buprenorphine",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+              ],
+              "maximum": 5,
+              "minimum": 1
+          },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "TX_EFFECTIVE",
+          "title": "Primary Care Clinicians' perceived OUD treatment effectiveness",
+          "description": "Primary Care Clinicians' perceived OUD treatment effectiveness",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+              ],
+              "maximum": 4,
+              "minimum": 1
+          },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      },
+      {
+          "name": "TX_ADHERENCE",
+          "title": "Primary Care Clinicians' perceived OUD treatment adherence",
+          "description": "Primary Care Clinicians' perceived OUD treatment adherence",
+          "type": "integer",
+          "constraints": {
+              "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+              ],
+              "maximum": 4,
+              "minimum": 1
+          },
+            "enumLabels": "",
+            "standardsMappings": [
+                {
+                    "item": {
+                        "source": "",
+                        "id": ""
+                    }
+                }
+            ]
+      }
+    ]
+}
